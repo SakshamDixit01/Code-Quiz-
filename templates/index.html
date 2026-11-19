@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{{url_for('static', filename = 'style.css')}}">
+</head>
+<body>
+    <header class="navbar"> 
+        <a href="/" class="logo"> Code<span> Quiz.</span></a>
+
+        <nav>
+            <a href="#home">Home </a>
+            <a href="#challenge"> Daily Challenge </a>
+            <a href="#categories"> Categories </a>
+        </nav>
+
+
+        <a href="#challenge" class="nav-button"> Start Learning </a>
+    </header>
+
+    <main>
+    <section class="hero" id = "home">
+        <div class="hero-content"> 
+            <p class="eyebrow"> LEARN PRACTICE IMPROVE .</p>
+
+            <h1>
+                Think in Code.
+                <span> Get Better </span>
+                by doing.
+           </h1>
+
+           <p class="hero-description"> A better way to learn programming , Test your Knowledge,
+            solve challenges and become a better developer.
+           </p>
+
+
+           <div class="hero-buttons">
+            <a href="#challenge" class="primary-button"> Start Quiz </a>
+
+
+            <a href="#categories" class="secondary-button"> Explore Topics </a>
+
+           </div>
+        </div>
+        <div class="hero-visual">
+            <div class="code-window">
+                <div class="window-top">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <p> your_progress.js</p>
+                </div>
+
+                <div class="code-content">
+                    <p><span> 01</span> const developer = {</p>
+                        <p><span>02</span> &nbsp; learning:true,</p>
+                        <p><span>03</span> &nbsp; practice :"daily",</p>
+                        <p><span>04</span>&nbsp; growth:"infinite"</p>
+
+                        <p><span>05</span>};</p>
+                        <br>
+                        <p><span>06</span> developer.levelUp();</p>
+                </div>
+
+
+                <div class="code-footer">
+                    <span> SYSTEM READY </span>
+                    <span> BUILD YOUR SKILLS</span>
+
+                </div>
+            </div>
+
+            <div class="floating-note">
+                <span>*</span>
+                Small Steps Big Progress. 
+            </div>
+        </div>
+
+
+        <div class="hero-bottom">
+            <span> 01 - YOUR CODING JOURNEY STARTS HERE </span>
+            <span> SCROLL TO EXPLORE </span>
+        </div>
+    </section>
+    <section class="challenge-section" id="challenge">
+        <div class="section-heading">
+            <div>
+                <p class="eyebrow"> TEST YOUR KNOWLEDGE </p>
+                <H2> Today's Challenge <span></span></H2>
+            </div>
+
+            <p class="section-description"> 
+                One question at a time. Every answer takes you closer to becoming a btter programmer.
+            </p>
+        </div>
+
+        <div class="challenge-card">
+            <div class="challenge-top">
+                <span> DAILY CHALLENGE </span>
+                <span> 01/05</span>
+            </div>
+
+            <h2 class="question"> Loading your question.... </h2>
+
+            <div class="answer-options"></div>
+            <p class="challenge-note"></p>
+        </div>
+
+    </section>    
+
+    <section class="categories-section" id="categories">
+
+        <div class="section-heading">
+            <div>
+                <p class="eyebrow"> CHOOSE YOUR PATH </p>
+
+                <H2> Explore Topics .<span></span></H2>
+
+            </div>
+            <p class="section-description">
+                Pick a subject and challenge yourself with programming challenge 
+            </p>
+
+
+        </div>
+
+        <div class="category-grid">
+            <div class="category-card">
+                <span class="category-number">01</span>
+                <h3> Python</h3>
+                <p> Build logic and learn one of the most popular programming languages.</p>
+                <button onclick="startQuiz('Python')"> Practice Python </button>
+
+            </div>
+
+            <div class="category-card">
+                <span class="category-number">02</span>
+                <h3> JavaScript </h3> 
+                <P> Understand Web Programming and make Websites Interactive.</P>
+                <button onclick="startQuiz('JavaScript')""> Practice JavaScript </button>
+
+            </div>
+
+            <div class="category-card"> 
+                <span class="category-number">03</span>
+                <h3> HTML</h3>
+                <p> Learn the structure and building blocks of modern Websites </p>
+                <button onclick="startQuiz('HTML')"> Pratice HTML </button>
+            </div>
+
+            <div class="category-card">
+                <span class="category-number">04</span>
+                <h3> SQL </h3>
+                <p> Explore databases , queries and the art of managing data</p>
+                <button onclick="startQuiz('SQL')"> Practice SQL </button>
+            </div>
+
+
+        </div>
+    </section>
+
+    <section class="bottom-cta">
+
+        <p class="eyebrow"> YOUR NEXT LEVEL STARTS HERE </p>
+        <H2> Don't just learn it <br> Code it </H2>
+        <a href="#challenge" class="primary-button"> Take the Challenge 
+   </a>
+    </section>
+    </main>
+    <footer class="footer">
+        <a href="/" class="logo"> Code <span> Quiz.</span></a>
+        <p> Made for curious minds and future developers.</p>
+        <span> 2026 CODEQUIZ </span>
+    </footer>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
